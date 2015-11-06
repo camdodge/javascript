@@ -12,16 +12,26 @@ var PUPIL_RIGHT_OFFSET = 20;
 var EYE_RADIUS = 10;
 var EYE_OFFSET = 14;
 
-/* Write a comment here about your overall program */
+/* This program will create a series of ghost images on the screen */
 function start(){
-	// Add your code and your own functions
+
+	var cx = getWidth()/2;
+        var cy = getHeight()/2;
+        drawGhost(cx, cy, Color.red);
+        drawGhost(100,100, Color.green);
+        drawGhost(300, 200, Color.black);
+        drawGhost(40, 300, Color.orange);
+        drawGhost(300, 50, Color.yellow);
+	
 }
 
 function drawGhost(cx, cy, color){
+	 drawRectangle(BODY_WIDTH, BODY_HEIGHT, Body_Color);
+	
 }
 
 /*function start(){
-    drawRectangle(STOPLIGHT_WIDTH, STOPLIGHT_HEIGHT, GRAY_COLOR);
+    drawRectangle(BODY_WIDTH, BODY_HEIGHT, Body_Color);
     drawCircle(LIGHT_RADIUS, Color.red, - BUFFER);
     drawCircle(LIGHT_RADIUS, Color.yellow, offset);
     drawCircle(LIGHT_RADIUS, Color.green, + BUFFER);
